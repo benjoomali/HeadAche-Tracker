@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/headache_title_label"
+            style="?android:listSeparatorTextViewStyle"/>
+
+        <EditText
+            android:id="@+id/headache_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@string/headache_title_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/headache_details_label"
+            style="?android:listSeparatorTextViewStyle"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/headache_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                style="?android:attr/buttonStyle"/>
+
+        <Button
+                android:id="@+id/headache_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="2"
+                style="?android:attr/buttonStyle"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/headache_inout_label"
+            android:id="@+id/radioButton_in"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/headache_out_label"
+            android:id="@+id/radioButton_out"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <CheckBox
+                android:id="@+id/headache_inout"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/headache_inout_label"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/headache_intensity"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <SeekBar
+        android:id="@+id/headache_intensity_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:max="10"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/description_hint"
+        android:id="@+id/headache_description_text"
+        android:layout_weight="0.10"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"/>
+
+</LinearLayout>

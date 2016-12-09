@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Headache Tracker</string>
+    <string name="headache_title_hint">Name your Headache</string>
+    <string name="headache_title_label">Title</string>
+    <string name="headache_details_label">Details</string>
+    <string name="headache_inout_label">Indoors</string>
+    <string name="headache_out_label">Outdoors</string>
+    <string name="date_picker_title">Date of Headache:</string>
+    <string name="new_headache">New Headache</string>
+    <string name="show_subtitle">Show #</string>
+    <string name="hide_subtitle">Hide #</string>
+    <string name="subtitle_format">%1$s Headaches</string>
+    <string name="time_picker_title">Time of Headache:</string>
+    <string name="at">Time: </string>
+    <string name="choices">Edit the Date and Time of Headache:</string>
+    <string name="delete">Delete Entry</string>
+    <string name="delete_confirmation">Are you sure you want to delete?</string>
+    <string name="delete_ok">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="deleted_menu">Deleted Entry</string>
+    <string name="description_label">Additional Details</string>
+    <string name="description_hint">Describe Your Headache, Babe.</string>
+    <string name="graph_title">Graph this Sucker</string>
+    <string name="headache_intensity">Headache Intensity:</string>
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$s Headache</item>
+        <item quantity="other">%1$s Headaches</item>
+    </plurals>
+
+
+</resources>
